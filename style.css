@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  --scrollbarBG: black;
+  --thumbBG: rgb(165, 129, 38);
+}
+body::-webkit-scrollbar {
+  width: 22px;
+}
+body {
+  scrollbar-width: 2px;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 12px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(152, 152, 248);
+    width: 100vw;
+    height: 360vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    padding: 20px; 
+    align-items: flex-end; 
+    position: sticky;  
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: RGB(152, 152, 248);
+    height: 15vh;
+}
+
+nav {
+    height: 65px;  
+}
+.navbar {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;    
+}
+
+.navbar>li {
+    display: inline-block;
+    flex-direction: row;
+    margin: auto;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+li.logo {
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(185, 134, 4);
+}
+.search input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+} 
+
+#dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+
+span {
+    color: rgb(224, 18, 18);
+}
+
+.search,.sort,.cart {
+    justify-content: flex-end;
+    float: right;
+}
+#library {
+    width: 100vw;
+    background-color: rgb(124, 106, 61);
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0.3rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    color:rgb(33, 41, 153)
+}
+.shopping-basket {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    color:rgb(52, 56, 116);
+}
+@media (max-width:1000px) {
+    #library {grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media (max-width:800px) {
+    #library {grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media (max-width:400px) {
+    #library {grid-template-columns: repeat(1, 1fr);
+    }   
+}
+.dvdCard {
+    width: 16rem;
+    height: 25rem;
+    background-color: #d4afb9;
+    object-fit: contain;
+    padding: 2px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    row-gap: 1em;
+}
+
+.dvdName {
+    font-weight: 700;
+}
+
+.dvdGenre {
+    font-family: poppins;
+}
+
+.textholder {
+    background-color: rgb(207, 166, 246);
+    height: 70%; 
+    line-height: 1rem;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.uls {
+    background-color: #dce1e9;
+    width: 100%;
+    height: 100%;  
+    padding: 0;
+    
+}
+
+.uls li {
+    display: flex;
+    flex-direction: column;
+    word-spacing: 2%;
+    row-gap: 1em;
+    line-height: 1rem;
+    padding: 0.5em;
+    justify-content: center;      
+}
+
+.dvdimage {
+    justify-self: flex-start;
+    width: 70%;
+    height: 60%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.Add {
+    background-color: #66c3ff;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.3em;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    
+}
+
+.Add:hover {
+    background-color: #ffa500;
+}
+
+
+.cart button{
+    background-color: #66c3ff;
+    border: none;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cart button:hover {
+    background-color: orange;
+    transition: all 0.6s ease-in-out;
+}
+
+.cart a {
+    cursor: pointer;
+}
+
+.total{
+    font-size: 2rem;
+    color: rgb(165, 129, 38);
+    font-weight: 700;
+    text-align: center;
+}
+
+.buy{
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    color: blue;
+    box-shadow: 5px 5px;
+
+}
+
+.buy:hover {
+    background-color: orange;
+    cursor: pointer;
+}
