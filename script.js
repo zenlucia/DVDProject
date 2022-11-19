@@ -134,31 +134,3 @@ cartbutton.addEventListener("click", ()=>{
 }, 2000);
 })
 
-
-
-let label = document.getElementById("label")
-let shoppingBasket = document.getElementById("shopping-basket")
-let generateBasketItems=()=>{}
-/*use IDs to populate cart page; loop through
-function addToCartPage(id) {
-  let cartPage = document.getElementById("cart")
-  document.getElementById("img").src = "img";
-  
-  dvdname = document.getElementById("dvdname")
-  price = document.getElementById("dvdprice")
-  quantity = document.getElementById("quantity")
-  textHolder.append(dvdName)
-    li.append(dvdname, breaks)  
-  li.append(dvdPrice, breaks1)
-  
-}
-addToCartPage();*/
-
-/**search genre */
-let filterSearch = document.getElementById("library")
-/**Add eventlistener to search box */
-filterSearch.addEventListener("keyup", filterNames);
-/**Get DVD titles; Get value  */
-function filterNames() {
-  console.log(DVDList.movie);
-}
