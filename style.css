@@ -159,10 +159,6 @@ h1{
     row-gap: 1em;
 }
 
-.dvdName {
-    font-weight: 700;
-}
-
 .dvdGenre {
     font-family: poppins;
 }
@@ -261,7 +257,7 @@ h1{
     border: none;
     color: blue;
     box-shadow: 5px 5px;
-
+    background-color: rgb(235, 182, 48);
 }
 
 .buy:hover {
