@@ -75,7 +75,9 @@ function clearCart()
   let cart = document.getElementById("gotocart")
   cart.innerHTML = ""
   cart.style.visibility = "hidden"
+  let h1 = document.getElementById("yourCart")
+  h1.innerHTML=""
   buy = document.querySelector(".buy")
   buy.innerHTML = ""
-  buy.style.visibility = 'hidden' 
+  buy.style.visibility = 'hidden'   
 }
